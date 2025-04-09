@@ -1,0 +1,222 @@
+
+/* 🌈 Theme Colors */
+:root {
+    --primary: #f59e74;     /* Soft Coral */
+    --accent: #ffd166;      /* Sunny Yellow */
+    --text: #444;
+    --background: #c7c0b3;
+  }
+  
+  /* Reset & Base */
+  * {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: var(--background);
+    background-image: url('../images/paw-pattern.png'); /* Optional: add a paw print background */
+    background-repeat: repeat;
+    background-size: 150px;
+  }
+  
+  section {
+    padding: 2rem 9%;
+  }
+  
+  /* 🐾 Headings */
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--text);
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 214, 102, 0.05);
+  }
+  
+  .heading span {
+    color: var(--primary);
+  }
+  
+  /* 🧡 Buttons */
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    background: var(--text);
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+  }
+
+/* General Page Styling */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  }
+  
+  header .logo {
+    font-size: 3rem;
+    color: var(--text);
+    font-weight: bolder;
+  }
+  
+  header .logo span {
+    color: var(--primary);
+  }
+  
+  header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+  }
+  
+  header .navbar a:hover {
+    color: var(--primary);
+  }
+  
+  header .icons a {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-left: 1.5rem;
+  }
+  
+  header .icons a:hover {
+    color: var(--primary);
+  }
+  
+  header #toggler {
+    display: none;
+  }
+  
+  header .fa-bars {
+    font-size: 3rem;
+    color: var(--text);
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+  }
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5f2; /* soft cream */
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Reusable Section Styling */
+  .page-section {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  /* Form Container */
+  .form-box h2 {
+    font-size: 1.8rem;
+    color: #ff6b6b; /* coral */
+    margin-bottom: 1rem;
+  }
+  
+  /* Input Fields */
+  .form-box input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ffccc7;
+    border-radius: 12px;
+    background-color: #fffaf9;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-box input:focus {
+    outline: none;
+    border-color: #ff6b6b;
+  }
+  
+  /* Buttons */
+  .form-box button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .form-box button:hover {
+    background-color: #ff4f4f;
+  }
+  
+  /* Small Text / Links */
+  .form-box p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .form-box a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .form-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Results Styling */
+  #searchResults {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  #searchResults p {
+    padding: 0.5rem;
+    background: #fff0ee;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
