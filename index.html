@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Supply Co. | Pet Toys, Food & Beds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css"> 
+<script src="js/display.js" defer></script>
+<script src="js/cart.js" defer></script>
+<script src="js/display-cart.js" defer></script>
+<script src="js/add-to-cart.js" defer></script>
+<script src="js/add-to-wishlist.js" defer></script>
+
+
+
+</head>
+<body>
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="logo">Pawfect Supply co<span>.</span></a>
+    <nav class="navbar">
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#products">products</a>
+    <a href="#review">review</a>
+    <a href="#contact">contact</a>
+</nav>
+
+
+<div class="icons">
+    <a href="wishlist.html" class="fas fa-heart"></a>
+    <a href="cart.html" class="fas fa-shopping-cart"></a>
+    <a href="login.html" class="fas fa-user"></a>
+    <a href="search.html" class="fa fa-search"></a>
+    </div>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="content">
+    </div>
+        </section>
+
+
+        <!--about section-->
+        <section class="about" id="about">
+            <h1 class="heading"><span>Who</span> We Are 🐾</h1>
+            <div class="about-container">
+              <div class="about-img">
+                <video src="images/Orange Minimalist Pet Care Service Mobile Video.mp4" autoplay muted loop playsinline></video>
+              </div> 
+              <div class="about-text">
+                <h3>More Wag. Less Worry.</h3>
+                <p>We’re Pawfect Supply — your go-to for handpicked pet goodies that bring tail-wagging joy and comfort to your furry family. From bouncy toys to cozy beds, we’ve got everything to keep paws happy.</p>
+                <ul>
+                  <li>✔️ Vet-approved food & treats</li>
+                  <li>✔️ Comfy beds for perfect snoozes</li>
+                  <li>✔️ Toys that beat boredom</li>
+                </ul>
+                <a href="#products" class="btn">Explore Products</a>
+              </div>
+            </div>
+          </section>
+          <!-- 🧸 Products Section -->
+<section class="products" id="products">
+  <h1 class="heading"><span>our</span> products 🐶</h1>
+  <div class="product-container">
+    <div class="product-card">
+      <div class="image-box">
+        <img src="images/Dog Food in Bowl and Dog Biscuits.jpg" alt="Dog Toy">
+      </div>
+      <h3>Dog food</h3>
+      <p>Tasty and healthy!</p>
+      <span>$12.99</span>
+      <a href="#" class="btn add-to-cart"
+      data-id="1"
+      data-name="Dog food"
+      data-price="12.99"
+      data-image="images/Dog Food in Bowl and Dog Biscuits.jpg">Add to Cart</a>
+      <button class="btn"
+    onclick="addToWishlist('Dog food', 'images/Dog Food in Bowl and Dog Biscuits.jpg')">Add to Wishlist</button>
+
+    </div>
+    <div class="product-card">
+      <div class="image-box">
+        <img src="images/utsadd-pet-bed-light-grey__1239833_pe919130_s5.avif" alt="Dog Bed">
+      </div>
+      <h3>Cozy Bed</h3>
+      <p>Perfect for naps</p>
+      <span>$39.99</span>
+      <a href="#" class="btn add-to-cart"
+   data-id="2"
+   data-name="Cozy Bed"
+   data-price="39.99"
+   data-image="images/utsadd-pet-bed-light-grey__1239833_pe919130_s5.avif">Add to Cart</a>
+   <button class="btn" onclick="addToWishlist('Cozy Bed', 'images/utsadd-pet-bed-light-grey__1239833_pe919130_s5.avif')">Add to Wishlist</button>
+
+    </div>
+  
+
+  </div>
+</section>
+
+
+<!-- 🐾 Review Section -->
+<section class="review" id="review">
+  <h1 class="heading"><span>Happy</span> Tails 🐕</h1>
+  <div class="review-container">
+    <div class="review-box">
+      <p>"My dog *lives* for the chew toy. Fast shipping and great quality!"</p>
+      <h4>- Emma & Max 🐾</h4>
+    </div>
+    <div class="review-box">
+      <p>"The bed is SO soft. My cat refuses to sleep anywhere else now."</p>
+      <h4>- Arjun & Luna 🐱</h4>
+    </div>
+    <div class="review-box">
+      <p>"Pawfect Supply nailed it. Eco-friendly and adorable packaging!"</p>
+      <h4>- Jess & Bean 🐶</h4>
+    </div>
+  </div>
+</section>
+
+<!-- 📬 Contact Section -->
+<section class="contact" id="contact">
+  <h1 class="heading"><span>Let's</span> Connect 📬</h1>
+  <div class="contact-container">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> support@pawfectsupply.com</p>
+      <p><i class="fas fa-phone"></i> +1 800-123-PAWS</p>
+      <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+    </div>
+  </div>
+</section>
